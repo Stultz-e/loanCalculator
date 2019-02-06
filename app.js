@@ -49,6 +49,12 @@ function calculateResults(e) {
 function showError(error) {
     const errorDiv = document.createElement('div');
 
+    // Hide Results
+    document.getElementById('results').style.display = 'none';
+
+    // Hide Loader
+    document.getElementById('loading').style.display = 'none';
+
     // Get elements 
     const card = document.querySelector('.card');
     const heading = document.querySelector('.heading');
